@@ -31,6 +31,79 @@ dependencies:
   flutter:
     sdk: flutter
 
+  #input phone
+  country_code_picker: ^3.0.0
+  country_picker: ^2.0.21
+  # State management
+  bloc: ^8.1.2
+  flutter_bloc: ^8.1.3
+  # for comparing anything
+  equatable: ^2.0.5
+  # Local Storage
+  flutter_secure_storage: ^8.0.0
+  shared_preferences: ^2.2.2
+  # responsiveness
+  flutter_screenutil: ^5.8.4
+  # navigation system
+  go_router: ^9.0.0
+  # localizing the app
+  flutter_localizations:
+    sdk: flutter
+  pin_code_fields: ^8.0.1
+  # for validating phone number
+  intl_phone_number_input: ^0.7.3+1
+  # applying lottie animation
+  lottie: ^2.4.0
+  # for masking text
+  mask_text_input_formatter: ^2.5.0
+  # viewing svg assets
+  flutter_svg: ^2.0.7
+  # network layer
+  dio: ^5.3.0
+  build_runner: ^2.2.0
+  freezed: ^2.1.0+1
+  freezed_annotation: ^2.1.0
+  json_annotation: ^4.6.0
+  json_serializable: ^6.3.1
+  # Functional programming in Dart
+  dartz: ^0.10.1
+  # Service Locator
+  get_it: ^7.6.0
+  # getting user location
+  geocoding: ^2.1.0
+  geolocator: ^9.0.2
+  # for showing snackbar
+  connectivity_plus: ^4.0.2
+  # for showing story view
+ # story:
+  #  path: ./packages/story
+ # video_player: ^2.7.1
+  #image network
+  cached_network_image: ^3.2.3
+  # skeleton loading effect
+  shimmer: ^3.0.0
+  # viewing pdf files
+  flutter_cached_pdfview: ^0.4.2
+  # for purchase in app subscription
+  purchases_flutter: ^5.6.5
+  # for getting version number of the app
+  package_info_plus: ^4.1.0
+  # Tracking issues and bugs
+  sentry_flutter: ^7.10.1
+  sentry_dio: ^7.10.1
+  # stripe payment integration
+  flutter_dotenv: ^5.1.0
+  flutter_stripe: ^9.4.0
+  # for comparing version number with the requird
+  pub_semver: ^2.1.4
+  #url launcher for opening url
+  url_launcher: ^6.1.14
+  # for showing barcode in the app
+  syncfusion_flutter_barcodes: ^23.1.40
+  # for sms autofill
+  otp_autofill: ^3.0.0
+  # for sharing content
+  share_plus: ^7.2.1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
