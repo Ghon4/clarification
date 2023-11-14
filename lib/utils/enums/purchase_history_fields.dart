@@ -1,0 +1,4 @@
+enum PurchaseHistoryFields {
+  points,
+  promoCodes,
+}
