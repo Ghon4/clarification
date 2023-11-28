@@ -1,17 +1,4 @@
 class Endpoints {
-  // App config
-  static const String appConfig = 'app-config';
-  // Auth
-
-  // Profile
-
-  // settings
-
-  // News
-
-  // Events
-
-  // Notifications
-
-  // shop
+  // people
+  static const String people = '/person/popular';
 }
