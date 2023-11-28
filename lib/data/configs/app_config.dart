@@ -6,8 +6,6 @@ class AppConfig {
   // static const appleApiKey = '';
   //
   // static const googleApiKey = '';
-
-  static const apiKey = '6a222a0bf85f125fd558c29f1f9a6205';
   static const authToken =
       "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2YTIyMmEwYmY4NWYxMjVmZDU1OGMyOWYxZjlhNjIwNSIsInN1YiI6IjY1NjVlOGQ5ZDk1NDIwMDBmZTMzMzYzMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.I5TzJhNPtcWT6uWTnZYrwbHFZEqLqgff5HR3S6YZYHg";
 
