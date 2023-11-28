@@ -1,5 +1,7 @@
 import 'package:demop/domain/entities/results.dart';
 import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+
 
 class PersonDetailsScreen extends StatelessWidget {
   final Results person;
@@ -16,8 +18,8 @@ class PersonDetailsScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.network(
-              'https://image.tmdb.org/t/p/original${person.profilePath}',
+            CachedNetworkImage(
+              imageUrl:   'https://image.tmdb.org/t/p/original${person.profilePath}',
               height: 200,
               width: double.infinity,
               fit: BoxFit.cover,
@@ -39,7 +41,8 @@ class PersonDetailsScreen extends StatelessWidget {
                 itemCount: person.knownFor?.length,
                 itemBuilder: (context, index) {
                   final knownFor = person.knownFor?[index];
-                  return Image.network(
+                  return CachedNetworkImage(
+                    imageUrl:
                     'https://image.tmdb.org/t/p/original${knownFor?.posterPath}',
                     fit: BoxFit.cover,
                   );

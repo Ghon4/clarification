@@ -5,6 +5,7 @@ import 'package:demop/domain/entities/results.dart';
 import 'package:demop/domain/use_cases/auth/people_usecase.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 import 'person_details_screen.dart';
 
@@ -64,7 +65,8 @@ class _PeopleScreenState extends State<PeopleScreen> {
                       style: const TextStyle(fontSize: 16, color: Colors.black)
                   ),
                   leading: person?.profilePath != null
-                      ? Image.network(
+                      ? CachedNetworkImage(
+                    imageUrl:
                     'https://image.tmdb.org/t/p/original${person?.profilePath}',
                     height: 100,
                     width: 100,
