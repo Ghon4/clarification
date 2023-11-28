@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'presentation/screens/initial_screen.dart';
+import 'presentation/screens/people_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +13,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Flutter Demo',
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      // home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: PeopleScreen(),
     );
   }
 }
