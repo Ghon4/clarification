@@ -16,6 +16,41 @@ class KnownFor {
       this.voteAverage, 
       this.voteCount,});
 
+  KnownFor copyWith({
+    bool? adult,
+    String? backdropPath,
+    int? id,
+    String? title,
+    String? originalLanguage,
+    String? originalTitle,
+    String? overview,
+    String? posterPath,
+    String? mediaType,
+    List<int>? genreIds,
+    double? popularity,
+    String? releaseDate,
+    bool? video,
+    double? voteAverage,
+    int? voteCount,
+  }) {
+    return KnownFor(
+      adult: adult ?? this.adult,
+      backdropPath: backdropPath ?? this.backdropPath,
+      id: id ?? this.id,
+      title: title ?? this.title,
+      originalLanguage: originalLanguage ?? this.originalLanguage,
+      originalTitle: originalTitle ?? this.originalTitle,
+      overview: overview ?? this.overview,
+      posterPath: posterPath ?? this.posterPath,
+      mediaType: mediaType ?? this.mediaType,
+      genreIds: genreIds ?? this.genreIds,
+      popularity: popularity ?? this.popularity,
+      releaseDate: releaseDate ?? this.releaseDate,
+      video: video ?? this.video,
+      voteAverage: voteAverage ?? this.voteAverage,
+      voteCount: voteCount ?? this.voteCount,
+    );
+  }
   KnownFor.fromJson(dynamic json) {
     adult = json['adult'];
     backdropPath = json['backdrop_path'];

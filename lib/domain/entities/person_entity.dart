@@ -7,6 +7,19 @@ class PersonEntity {
       this.totalPages, 
       this.totalResults,});
 
+  PersonEntity copyWith({
+    int? page,
+    List<Results>? results,
+    int? totalPages,
+    int? totalResults,
+  }) {
+    return PersonEntity(
+      page: page ?? this.page,
+      results: results ?? this.results,
+      totalPages: totalPages ?? this.totalPages,
+      totalResults: totalResults ?? this.totalResults,
+    );
+  }
   PersonEntity.fromJson(dynamic json) {
     page = json['page'];
     if (json['results'] != null) {

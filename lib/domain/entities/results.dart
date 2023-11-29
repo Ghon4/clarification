@@ -12,7 +12,30 @@ class Results {
     this.profilePath,
     this.knownFor,
   });
-  // add null check for all fields
+  Results copyWith({
+    bool? adult,
+    int? gender,
+    int? id,
+    String? knownForDepartment,
+    String? name,
+    String? originalName,
+    double? popularity,
+    String? profilePath,
+    List<KnownFor>? knownFor,
+  }) {
+    return Results(
+      adult: adult ?? this.adult,
+      gender: gender ?? this.gender,
+      id: id ?? this.id,
+      knownForDepartment: knownForDepartment ?? this.knownForDepartment,
+      name: name ?? this.name,
+      originalName: originalName ?? this.originalName,
+      popularity: popularity ?? this.popularity,
+      profilePath: profilePath ?? this.profilePath,
+      knownFor: knownFor ?? this.knownFor,
+    );
+  }
+
   Results.fromJson(dynamic json) {
     adult = json['adult'];
     gender = json['gender'];

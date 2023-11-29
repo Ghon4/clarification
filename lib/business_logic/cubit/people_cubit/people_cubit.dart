@@ -8,7 +8,8 @@ part 'people_state.dart';
 class PeopleCubit extends Cubit<PeopleState> {
   final PeopleUseCase _peopleUseCase;
   PeopleCubit(this._peopleUseCase) : super(PeopleInitial());
-  int page = 1;
+  int page = 1; // for pagination
+
   Future<void> getPopularPeople() async {
     emit(PeopleLoading());
     try {
