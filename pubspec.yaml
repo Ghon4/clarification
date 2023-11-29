@@ -104,6 +104,9 @@ dependencies:
   otp_autofill: ^3.0.0
   # for sharing content
   share_plus: ^7.2.1
+  # for photo zooming and saving
+  photo_view: ^0.14.0
+  image_gallery_saver: ^2.0.3
 
 
   # The following adds the Cupertino Icons font to your application.

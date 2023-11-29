@@ -13,6 +13,8 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
+	<key> NSPhotoLibraryAddUsageDescription </key>
+	<string> $(PRODUCT_NAME) photo use </string>
 	<string>demop</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>

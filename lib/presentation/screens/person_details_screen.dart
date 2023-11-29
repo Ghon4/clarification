@@ -2,6 +2,7 @@ import 'package:demop/domain/entities/results.dart';
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
+import 'full_screen_image_screen.dart';
 
 class PersonDetailsScreen extends StatelessWidget {
   final Results person;
@@ -18,11 +19,25 @@ class PersonDetailsScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            CachedNetworkImage(
-              imageUrl:   'https://image.tmdb.org/t/p/original${person.profilePath}',
-              height: 200,
-              width: double.infinity,
-              fit: BoxFit.cover,
+            GestureDetector(
+              // Navigate to FullScreenImageScreen when the profile image is tapped
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => FullScreenImageScreen(
+                        imageUrl:
+                            'https://image.tmdb.org/t/p/original${person.profilePath}'),
+                  ),
+                );
+              },
+              child: CachedNetworkImage(
+                imageUrl:
+                    'https://image.tmdb.org/t/p/original${person.profilePath}',
+                height: 200,
+                width: double.infinity,
+                fit: BoxFit.cover,
+              ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
@@ -43,7 +58,7 @@ class PersonDetailsScreen extends StatelessWidget {
                   final knownFor = person.knownFor?[index];
                   return CachedNetworkImage(
                     imageUrl:
-                    'https://image.tmdb.org/t/p/original${knownFor?.posterPath}',
+                        'https://image.tmdb.org/t/p/original${knownFor?.posterPath}',
                     fit: BoxFit.cover,
                   );
                 },
